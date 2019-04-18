@@ -23,7 +23,6 @@ toolchain:
       $ref: "#/messages/template.gettingStarted"
 services:
   sample-repo: ''
-
   sample-build:
     service_id: pipeline
     parameters:
