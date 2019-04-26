@@ -25,8 +25,8 @@ services:
   sample-repo:
     $switch:
       - $expr: $env.source_provider
-      - $default: 'hostedgit'
-        service_id: hostedgit
+      - $default: 'githubconsolidated'
+        service_id: githubconsolidated
         parameters:
           repo_name: '{{toolchain.name}}'
           repo_url: $env.app_repo || 'https://github.com/open-toolchain/node-hello-world'
