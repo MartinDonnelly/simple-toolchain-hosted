@@ -13,16 +13,23 @@ template:
     - sample-repo
   info:
     git url: >-
-      [https://github.com/MartinDonnelly/simple-toolchain-hosted](https://github.com/MartinDonnelly/simple-toolchain-hosted)
+      [https://github.com/open-toolchain/simple-toolchain-hosted](https://github.com/open-toolchain/simple-toolchain-hosted)
     git branch: >-
-      [master](https://github.com/MartinDonnelly/simple-toolchain-hosted/tree/master)
+      [master](https://github.com/open-toolchain/simple-toolchain-hosted/tree/master)
 toolchain:
   name: 'simple-toolchain-{{timestamp}}'
   template:
     getting_started:
       $ref: "#/messages/template.gettingStarted"
 services:
-  sample-repo: 
+  sample-repo:
+    service_id: hostedgit
+    parameters:
+      repo_name: '{{toolchain.name}}'
+      repo_url: 'https://github.com/open-toolchain/node-hello-world'
+      type: clone
+      has_issues: true
+      enable_traceability: true
   sample-build:
     service_id: pipeline
     parameters:
