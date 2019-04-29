@@ -27,7 +27,7 @@ services:
         parameters:
           repo_name: '{{toolchain.name}}'
           source_repo_url: 'https://github.com/MartinDonnelly/node-hello-world'
-          type: 'link'
+          type: 'clone'
           has_issues: true
           enable_traceability: true
   sample-build:
