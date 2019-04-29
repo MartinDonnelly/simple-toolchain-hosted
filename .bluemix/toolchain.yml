@@ -26,8 +26,8 @@ services:
         service_id: hostedgit
         parameters:
           repo_name: '{{toolchain.name}}'
-          repo_url: 'https://git.ng.bluemix.net/martin_donnelly/NodejsWebAppwithExpressjsFeb19MWD'
-          type: 'clone'
+          source_repo_url: 'https://git.ng.bluemix.net/martin_donnelly/NodejsWebAppwithExpressjsFeb19MWD'
+          type: 'link'
           has_issues: true
           enable_traceability: true
   sample-build:
