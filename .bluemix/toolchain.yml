@@ -22,7 +22,7 @@ toolchain:
     getting_started:
       $ref: "#/messages/template.gettingStarted"
 services:
-  sample-repo:
+  repo:
     service_id: github_integrated
     parameters:
       repo_name: '{{toolchain.name}}'
