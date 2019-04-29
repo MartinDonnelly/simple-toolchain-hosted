@@ -26,7 +26,7 @@ services:
         service_id: github_integrated
         parameters:
           repo_name: '{{toolchain.name}}'
-          source_repo_url: 'https://github.com/MartinDonnelly/node-hello-world'
+          repo_url: 'https://github.com/MartinDonnelly/node-hello-world'
           type: 'link'
           has_issues: true
           enable_traceability: true
