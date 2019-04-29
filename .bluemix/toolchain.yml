@@ -22,7 +22,7 @@ toolchain:
     getting_started:
       $ref: "#/messages/template.gettingStarted"
 services:
-  repo:
+  sample-repo:
     $switch:
       - $expr: $env.source_provider
       - $default: 'hostedgit'
