@@ -23,11 +23,11 @@ toolchain:
       $ref: "#/messages/template.gettingStarted"
 services:
   sample-repo:
-        service_id: githubpublic
+        service_id: githubconsolidated
         parameters:
           repo_name: '{{toolchain.name}}'
-          source_repo_url: 'https://github.com/MartinDonnelly/node-hello-world'
-          type: 'clone'
+          repo_url: 'https://github.com/MartinDonnelly/node-hello-world'
+          type: 'link'
           has_issues: true
           enable_traceability: true
   sample-build:
