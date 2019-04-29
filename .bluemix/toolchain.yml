@@ -27,7 +27,7 @@ services:
         parameters:
           repo_name: '{{toolchain.name}}'
           repo_url: 'https://git.ng.bluemix.net/martin_donnelly/NodejsWebAppwithExpressjsFeb19MWD'
-          type: 'link'
+          type: 'clone'
           has_issues: true
           enable_traceability: true
   sample-build:
