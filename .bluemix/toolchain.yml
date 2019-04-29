@@ -26,7 +26,7 @@ services:
         service_id: githubpublic
         parameters:
           repo_name: '{{toolchain.name}}'
-          source_repo_url: $env.app_repo || 'https://github.com/MartinDonnelly/node-hello-world'
+          source_repo_url: 'https://github.com/MartinDonnelly/node-hello-world'
           type: $env.type || 'clone'
           has_issues: true
           enable_traceability: true
