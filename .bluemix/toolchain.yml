@@ -28,7 +28,7 @@ services:
       repo_name: '{{toolchain.name}}'
       source_repo_url: $env.app_repo || 'https://github.com/open-toolchain/node-hello-world'
       type: $env.type || 'clone'
-      type: $env.type.what || 'test'
+      type2: $env.type.what || 'test'
       has_issues: true
       enable_traceability: true
   sample-build:
