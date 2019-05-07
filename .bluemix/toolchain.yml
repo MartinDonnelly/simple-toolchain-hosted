@@ -14,6 +14,7 @@ template:
   info:
     git url: >-
       '[' + $env.repository + '](' + $env.repository + ')' 
+    git branch: >-
       $env.repository && $env.branch ? '[' + $env.branch + ']('+ $env.repository + '/tree/' + $env.branch + ')': "[master](https://github.com/MartinDonnelly/simple-toolchain-hosted/tree/master)"
 toolchain:
   name: 'simple-toolchain-{{timestamp}}'
